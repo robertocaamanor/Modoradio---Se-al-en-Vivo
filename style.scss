@@ -1,0 +1,96 @@
+$colorprincipal: #F62459;
+$colorsecundario: #6C7A89;
+$fuenteprincipal: 'Roboto Slab', Arial, Times New Roman;
+$fuentesecundaria: 'Roboto', Arial, Times New Roman;
+$blanco: #FFFFFF;
+
+body {
+	color: $colorsecundario;
+	font-family: $fuentesecundaria;
+	font-weight: 400;
+}
+
+header {
+	background-color: $blanco;
+	padding: 10px;
+
+	.logo {
+		margin: 0 auto;
+		width: 10%;
+
+		img{
+			width: 100%;
+		}
+	}
+}
+
+.main {
+	background-color: $colorprincipal;
+	color: $blanco;
+	padding-bottom: 10px;
+
+	h1 {
+		font-size: 2.1em;
+		font-family: $fuenteprincipal;
+		font-weight: 700;
+	}
+	
+	b {
+		font-weight: 500;
+	}
+
+}
+
+.programacion {
+	padding-bottom: 10px;
+
+	h1 {
+		color: $colorprincipal;
+		font-family: $fuenteprincipal;
+		font-weight: 700;
+		font-size: 2.1em;
+	}
+
+	a {
+		color: $blanco;
+		background-color: $colorprincipal;
+		border-radius: 5px;
+		padding: 8px;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		width: 100%;
+		float: right;
+		text-decoration: none
+	}
+
+	.collapse {
+		margin-top: 15px;
+	}
+
+	img {
+		width: 100%;
+	}
+}
+
+footer {
+	background-color: #717171;
+	color: $blanco;
+	padding: 10px;
+
+	p {
+		text-align: center;
+		font-family: $fuenteprincipal;
+	}
+}
+
+@media screen and (max-width: 599px) {
+    header {
+    	.logo {
+			width: 30%;
+
+			img {
+				width: 100%;
+			}
+    	}
+    }
+}
